@@ -142,10 +142,12 @@
         <div class="full">
           <div class="main_heading text_align_center">
           <form id="forma" name="forma" method="post" action="index.php">
-            <h2>Conexión a BD MySQL</h2>
-            <h1>Ejemplo más cercano a la realidad</h1>
+            <h2>DISTRICELL</h2>
+            <h1>Gestión de Productos</h1>
             <br> <br>
-            <table border="1" class="product-table">
+            <div class="row">
+            <div class="col-md-6">
+            <table border="1" class="product-table price_contant">
                 <tr class="price_head">
                     <td><strong>ID</strong></td>
                     <td><strong>Producto</strong></td>
@@ -174,21 +176,20 @@
                         <td colspan="4"> No hay datos</td>
                     </tr>
                     <?php } ?>
+                    <br> <br>
+                    <br> <br>
             </table>
             <table class="product-table">
                 <tr>
                     <td colspan=3><input class="btn" type="button" name="eliminar" value="Eliminar" onclick="eliminarProducto();"></td>
                 </tr>
             </table>
-            <br> <br>
-            <br> <br>
+            </div>
+            <div class="col-md-6">
                 <input type="hidden" name="id_prod" value ="<?php echo $id_prod ?>">
-                <br> <br>
-                <br> <br>
+                <h5><strong>Nuevo Producto<strong></h5>
                 <br> <br>
                 <table border="0">
-                    <tr><td colspan=2><strong>Nuevo Producto<strong></td>
-                    </tr>
                     <tr>
                         <td><label id="lblNombre" for="nombre">Nombre:</label></td>
                         <td><input class="field_custom" type="text" name="nombre" value="<?php echo $nombre ?>" maxlength="100" size="25" required="true"></td>
@@ -207,6 +208,8 @@
                     </tr>
                     <tr><td colspan=2><input class="btn" type="submit" name="accion" value="<?php echo $accion; ?>"/></td></tr>
                 </table>
+            </div>
+            </div>
             </form>
           </div>
         </div>
