@@ -94,7 +94,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
-<body id="default_theme" class="it_service about">
+<body id="default_theme" class="it_service">
 <!-- header -->
 <header id="default_header" class="header_style_1">
   <!-- header top -->
@@ -181,7 +181,7 @@
             </table>
             <table class="product-table">
                 <tr>
-                    <td colspan=3><input class="btn" type="button" name="eliminar" value="Eliminar" onclick="eliminarProducto();"></td>
+                    <td colspan=3><input class="btn main_bt" type="button" name="eliminar" value="Eliminar" onclick="eliminarProducto();"></td>
                 </tr>
             </table>
             </div>
@@ -206,7 +206,7 @@
                         <td><label id="lblFechaV" for="fecha_vencimiento">Fecha de Vencimiento:</label></td>
                         <td><input class="field_custom" type="text" name="fecha_vencimiento" value="<?php echo $fecha_vencimiento ?>" maxlength="10" size="6"></td>
                     </tr>
-                    <tr><td colspan=2><input class="btn" type="submit" name="accion" value="<?php echo $accion; ?>"/></td></tr>
+                    <tr><td colspan=2><input class="btn main_bt" type="submit" name="accion" value="<?php echo $accion; ?>"/></td></tr>
                 </table>
             </div>
             </div>
@@ -227,6 +227,27 @@
     </div>
 </footer>
 <!-- end footer -->
+<!-- js section -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- menu js -->
+<script src="js/menumaker.js"></script>
+<!-- wow animation -->
+<script src="js/wow.js"></script>
+<!-- custom js -->
+<script src="js/custom.js"></script>
+<!-- revolution js files -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 </body>
 <script>
     function eliminarProducto()
